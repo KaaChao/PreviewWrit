@@ -1,0 +1,16 @@
+.div {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 1.5;
+    overflow: hidden;
+    word-break: break-all;
+    /*letter-spacing: 2px;*/
+}
+
+p {
+    /*text-indent: 2em;*/
+    margin: 0;
+    padding: 0;
+}

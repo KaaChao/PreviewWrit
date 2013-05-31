@@ -1,0 +1,413 @@
+/**
+ * @author 赵磊
+ * @version 2.0
+ * @description 用于定义全站的基本样式，包括reset。
+ * Created Date: 2013-03
+ * Update: 去掉不常用屬性，添加部分新屬性，修改部分名稱。
+ */
+
+/*CSS reset*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p,
+blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+/*HTML5 Tags*/
+article, aside, dialog, footer, header, section, footer, nav, figure, menu, hgroup {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym, fieldset, img, input, button {
+    border: none;
+}
+
+.ofh {
+    overflow: hidden;
+}
+
+/*文字排版*/
+.f12 {
+    font-size: 12px;
+}
+
+.f14 {
+    font-size: 14px;
+}
+
+.f16 {
+    font-size: 16px;
+}
+
+.f18 {
+    font-size: 18px;
+}
+
+.f20 {
+    font-size: 20px;
+}
+
+.f22 {
+    font-size: 22px;
+}
+
+.fb {
+    font-weight: bold;
+}
+
+.fn {
+    font-weight: normal;
+}
+
+.t2 {
+    text-indent: 2em;
+}
+
+.lh100 {
+    line-height: 1;
+}
+
+.lh150 {
+    line-height: 1.5;
+}
+
+.lh180 {
+    line-height: 1.8;
+}
+
+.lh200 {
+    line-height: 2;
+}
+
+.unl {
+    text-decoration: underline;
+}
+
+.no_unl {
+    text-decoration: none;
+}
+
+/*定位*/
+.tl {
+    text-align: left;
+}
+
+.tc {
+    text-align: center;
+}
+
+.tr {
+    text-align: right;
+}
+
+.fl {
+    float: left;
+    display: inline;
+}
+
+.fr {
+    float: right;
+    display: inline;
+}
+
+.cb {
+    clear: both;
+}
+
+.cl {
+    clear: left;
+}
+
+.cr {
+    clear: right;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+/* End hide from IE-mac */
+
+.vm {
+    vertical-align: middle;
+}
+
+.pr {
+    position: relative;
+}
+
+.pa {
+    position: absolute;
+}
+
+.zoom {
+    zoom: 1;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.none {
+    display: none;
+}
+
+.wn {
+    white-space: nowrap;
+}
+
+/*宽度和高度 100%*/
+.w {
+    width: 100%;
+}
+
+.h {
+    height: 100%;
+}
+
+/*边距*/
+.ma {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.m0 {
+    margin: 0 auto;
+}
+
+.m4 {
+    margin: 4px;
+}
+
+.m8 {
+    margin: 8px;
+}
+
+.m12 {
+    margin: 12px;
+}
+
+.m16 {
+    margin: 16px;
+}
+
+.m20 {
+    margin: 20px;
+}
+
+.mt4 {
+    margin-top: 4px;
+}
+
+.mt8 {
+    margin-top: 8px;
+}
+
+.mt12 {
+    margin-top: 12px;
+}
+
+.mt16 {
+    margin-top: 16px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mb8 {
+    margin-bottom: 8px;
+}
+
+.mb16 {
+    margin-bottom: 16px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.ml4 {
+    margin-left: 4px;
+}
+
+.ml8 {
+    margin-left: 8px;
+}
+
+.ml12 {
+    margin-left: 12px;
+}
+
+.ml16 {
+    margin-left: 16px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+.mr4 {
+    margin-right: 4px;
+}
+
+.mr8 {
+    margin-right: 8px;
+}
+
+.mr12 {
+    margin-right: 12px;
+}
+
+.mr16 {
+    margin-right: 16px;
+}
+
+.mr20 {
+    margin-right: 20px;
+}
+
+.p4 {
+    padding: 4px;
+}
+
+.p8 {
+    padding: 8px;
+}
+
+.p12 {
+    padding: 12px;
+}
+
+.p16 {
+    padding: 16px;
+}
+
+.p20 {
+    padding: 20px;
+}
+
+.pt4 {
+    padding-top: 4px;
+}
+
+.pt8 {
+    padding-top: 8px;
+}
+
+.pt12 {
+    padding-top: 12px;
+}
+
+.pt16 {
+    padding-top: 16px;;
+}
+
+.pt20 {
+    padding-top: 20px;
+}
+
+.pb4 {
+    padding-bottom: 4px;
+}
+
+.pb8 {
+    padding-bottom: 8px;
+}
+
+.pb12{
+    padding-bottom: 12px;
+}
+
+.pb16 {
+    padding-bottom: 16px;
+}
+
+.pb20 {
+    padding-bottom: 20px;
+}
+
+.pl4 {
+    padding-left: 4px;
+}
+
+.pl8 {
+    padding-left: 8px;
+}
+
+.pl12{
+    padding-left: 12px;
+}
+
+.pl16 {
+    padding-left: 16px;
+}
+
+.pl20 {
+    padding-left: 20px;
+}
+
+.pr4 {
+    padding-right: 4px;
+}
+
+.pr8 {
+    padding-right: 8px;
+}
+
+.pr12{
+    padding-right: 12px;
+}
+
+.pr16 {
+    padding-right: 16px;
+}
+
+.pr20 {
+    padding-right: 20px;
+}
